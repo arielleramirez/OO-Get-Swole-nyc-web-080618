@@ -46,15 +46,15 @@ describe "Lifter" do
     end
   end
 
-  describe "sign_up" do
-    it "creates a new Membership and associates a lifter and gym" do
-      sharon = Lifter.new("Sharon", 900)
-      lifetime = Gym.new("Lifetime Fitness")
-      sharon.sign_up(200, lifetime)
-
-      expect(sharon.gyms).to include(lifetime)
-    end
-  end
+  # describe "sign_up" do
+  #   it "creates a new Membership and associates a lifter and gym" do
+  #     sharon = Lifter.new("Sharon", 900)
+  #     lifetime = Gym.new("Lifetime Fitness")
+  #     sharon.sign_up(200, lifetime)
+  #
+  #     expect(sharon.gyms).to include(lifetime)
+  #   end
+  # end
 
   describe "total_cost" do
     it "returns a sum of the total cost of lifter's gym memberships" do
